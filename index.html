@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Movie Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-left">
+    <h1 class="site-title">Movie Booking</h1>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#upcoming">Upcoming</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </div>
+  <input
+    type="text"
+    id="search-bar"
+    placeholder="Search movies..."
+    autocomplete="off"
+  />
+</header>
+
+<main>
+  <section id="home">
+    <h2 class="section-title">Now Showing</h2>
+    <div id="movie-grid"></div>
+  </section>
+
+  <section id="upcoming">
+    <h2 class="section-title">Upcoming Movies</h2>
+    <div id="upcoming-grid"></div>
+  </section>
+
+  <section id="contacts">
+    <h2 class="section-title">Contacts Us</h2>
+    <p>Reach out to use at Movie@gmail.com or call - 91 123456789.</p>
+  </section>
+</main>
+
+<!-- Modal Popup -->
+<div id="showtime-modal">
+  <div id="modal-content">
+    <button class="close-btn">&times;</button>
+    <h2 id="modal-movie-title"></h2>
+    <div class="showtime-list" id="showtime-list"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
